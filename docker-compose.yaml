@@ -2,4 +2,4 @@ services:
   garden:
     build: ./garden-service
     ports:
-      - "9090:5000"
+      - "5000:5000"
