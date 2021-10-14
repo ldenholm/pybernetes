@@ -3,3 +3,7 @@ services:
     build: ./garden-service
     ports:
       - "5000:5000"
+  pool:
+    build: ./pool-service
+    ports:
+      - "9090:9090"
