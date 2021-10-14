@@ -3,13 +3,17 @@ from flask import jsonify
 
 app = Flask(__name__)
 
-garden = {"lush", "green", "fountains"}
+garden = [
+  { 'description': 'lovely, lush', 'amount': 20 }
+]
 
-@app.route("/garden")
-def get_garden():
+@app.route("/garden", )
+def gardenjson():
+    print('garden service request received')
     return jsonify(garden)
 
-@app.route("/")
-def garden():
-    print('garden service request received')
-    return "garden service"
+app.run()
+# @app.route("/")
+# def garden():
+#     print('garden service request received')
+#     return "garden service"
